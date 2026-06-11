@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Breno Montenegro | Front End Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-circuit"></div>
+
+  <header class="topbar">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">BM</div>
+      <div class="brand-text">
+        <strong>Breno Montenegro</strong>
+        <span>Front End Developer</span>
+      </div>
+    </a>
+
+    <nav class="menu">
+      <a class="active" href="index.html">Início</a>
+      <a href="sobre.html">Sobre mim</a>
+      <a href="objetivos.html">Objetivos</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle">Dark</button>
+  </header>
+
+  <main class="wrapper">
+    <!-- HERO -->
+    <section class="hero card">
+      <div class="hero-left">
+        <span class="pill">Portfólio de Programador</span>
+
+        <h1>
+          <span>Olá, eu sou</span>
+          <strong>Breno Montenegro</strong>
+        </h1>
+
+        <p class="hero-subtitle">
+          Desenvolvedor com foco em Front End, buscando criar interfaces modernas,
+          responsivas e visualmente marcantes usando HTML, CSS e JavaScript.
+        </p>
+
+        <div class="hero-actions">
+          <a href="sobre.html" class="btn btn-primary">Sobre mim</a>
+          <a href="objetivos.html" class="btn btn-outline">Objetivos profissionais</a>
+        </div>
+
+        <div class="hero-links">
+          <a href="https://github.com/brenomontenegro0508-droid" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/breno-montenegro-b76a9a413" target="_blank">LinkedIn</a>
+          <a href="mailto:Brenomontenegro100@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <aside class="hero-right">
+        <div class="mini-title">Linguagens & Tecnologias</div>
+
+        <div class="lang-grid">
+          <button class="lang-card" data-lang="HTML">
+            <span class="lang-name">HTML</span>
+            <span class="lang-level">Estrutura</span>
+          </button>
+          <button class="lang-card" data-lang="CSS">
+            <span class="lang-name">CSS</span>
+            <span class="lang-level">Layout & UI</span>
+          </button>
+          <button class="lang-card" data-lang="JS">
+            <span class="lang-name">JavaScript</span>
+            <span class="lang-level">Interatividade</span>
+          </button>
+          <button class="lang-card" data-lang="RESP">
+            <span class="lang-name">Responsividade</span>
+            <span class="lang-level">Mobile first</span>
+          </button>
+        </div>
+
+        <div class="lang-description" id="langInfo">
+          Clique em uma tecnologia para ver uma descrição detalhada.
+        </div>
+      </aside>
+    </section>
+
+    <!-- RESUMO -->
+    <section class="section">
+      <header class="section-header">
+        <span class="section-pill">Resumo</span>
+        <h2>Perfil como desenvolvedor</h2>
+        <p>Um pouco sobre meu foco, estilo e forma de trabalhar.</p>
+      </header>
+
+      <div class="grid-3">
+        <article class="info-card card">
+          <h3>Foco em Front End</h3>
+          <p>
+            Construção de interfaces modernas, com atenção à responsividade, usabilidade
+            e performance em diferentes dispositivos.
+          </p>
+        </article>
+
+        <article class="info-card card">
+          <h3>Estilo visual</h3>
+          <p>
+            Azul escuro com laranja como cor de destaque, inspirado em painéis
+            tecnológicos e dashboards profissionais.
+          </p>
+        </article>
+
+        <article class="info-card card">
+          <h3>Objetivo</h3>
+          <p>
+            Evoluir constantemente, participar de projetos reais e entregar
+            experiências visuais de alto nível.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section">
+      <header class="section-header">
+        <span class="section-pill">Contato</span>
+        <h2>Fale comigo</h2>
+        <p>Use o formulário abaixo. O envio é feito via FormSubmit direto para meu email.</p>
+      </header>
+
+      <div class="contact-layout">
+        <div class="contact-info card">
+          <h3>Informações rápidas</h3>
+          <ul>
+            <li><strong>Email:</strong> Brenomontenegro100@gmail.com</li>
+            <li><strong>GitHub:</strong> /brenomontenegro0508-droid</li>
+            <li><strong>LinkedIn:</strong> /breno-montenegro-b76a9a413</li>
+          </ul>
+          <p>
+            Retorno assim que possível. Sinta-se à vontade para falar sobre oportunidades,
+            projetos, estudos ou colaboração.
+          </p>
+        </div>
+
+        <form class="contact-form card" action="https://formsubmit.co/Brenomontenegro100@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="index.html">
+
+          <div class="form-row">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu email" required>
+          </div>
+
+          <input type="text" name="assunto" placeholder="Assunto" required>
+
+          <textarea name="mensagem" rows="6" placeholder="Sua mensagem" required></textarea>
+
+          <button type="submit" class="btn btn-primary full">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Breno Montenegro — Portfólio Front End.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
